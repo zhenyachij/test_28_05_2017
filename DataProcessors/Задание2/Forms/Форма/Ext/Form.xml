@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.2">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Table name="Таблица1" id="1">
+			<ContextMenu name="Таблица1КонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="Таблица1КоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="Таблица1РасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="Таблица1СтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>Таблица1</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="Таблица1СтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="Таблица1СтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="Таблица1СостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>Таблица1</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="Таблица1СостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="Таблица1СостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="Таблица1УправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>Таблица1</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="Таблица1УправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="Таблица1УправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="Таблица1Поле1" id="14">
+					<ContextMenu name="Таблица1Поле1КонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="Таблица1Поле1РасширеннаяПодсказка" id="16"/>
+				</InputField>
+				<InputField name="Таблица1Поле2" id="17">
+					<ContextMenu name="Таблица1Поле2КонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="Таблица1Поле2РасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="Таблица1Поле3" id="20">
+					<ContextMenu name="Таблица1Поле3КонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="Таблица1Поле3РасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="Таблица1Поле4" id="23">
+					<ContextMenu name="Таблица1Поле4КонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="Таблица1Поле4РасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="Таблица1Поле5" id="26">
+					<ContextMenu name="Таблица1Поле5КонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="Таблица1Поле5РасширеннаяПодсказка" id="28"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.Задание2</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+</Form>

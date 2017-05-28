@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.2">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<Enabled>false</Enabled>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<UsualGroup name="НомерДата" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер дата</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер дата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="НомерДатаРасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="НомерАвто" id="24">
+					<DataPath>Объект.Автомобиль.НомерАвтомобиля</DataPath>
+					<Enabled>false</Enabled>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="НомерАвтоКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="НомерАвтоРасширеннаяПодсказка" id="26"/>
+					<Events>
+						<Event name="OnChange">НомерАвтоПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Автомобиль" id="21">
+			<DataPath>Объект.Автомобиль</DataPath>
+			<ContextMenu name="АвтомобильКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="АвтомобильРасширеннаяПодсказка" id="23"/>
+			<Events>
+				<Event name="OnChange">АвтомобильПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="Покупатель" id="7">
+			<DataPath>Объект.Покупатель</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПокупательКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПокупательРасширеннаяПодсказка" id="9"/>
+			<Events>
+				<Event name="OnChange">ПокупательПриИзменении</Event>
+			</Events>
+		</InputField>
+		<UsualGroup name="Контрагент" id="41">
+			<Enabled>false</Enabled>
+			<ReadOnly>true</ReadOnly>
+			<EnableContentChange>true</EnableContentChange>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контрагент</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контрагент</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="42"/>
+			<ChildItems>
+				<InputField name="КонтактноеЛицо" id="10">
+					<DataPath>Объект.КонтактноеЛицо</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КонтактноеЛицоКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="КонтактноеЛицоРасширеннаяПодсказка" id="12"/>
+					<Events>
+						<Event name="OnChange">КонтактноеЛицоПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Адресс" id="38">
+					<DataPath>Объект.Адресс</DataPath>
+					<ContextMenu name="АдрессКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="АдрессРасширеннаяПодсказка" id="40"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ТекСостКилометраж" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тек сост километраж</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тек сост километраж</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ТекСостКилометражРасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<InputField name="ТекущееСостояниеЗаказа" id="30">
+					<DataPath>Объект.ТекущееСостояниеЗаказа</DataPath>
+					<ContextMenu name="ТекущееСостояниеЗаказаКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ТекущееСостояниеЗаказаРасширеннаяПодсказка" id="32"/>
+					<Events>
+						<Event name="OnChange">ТекущееСостояниеЗаказаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Километраж" id="35">
+					<DataPath>Объект.Километраж</DataPath>
+					<Enabled>false</Enabled>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="КилометражКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="КилометражРасширеннаяПодсказка" id="37"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ДокументОснование" id="13">
+			<DataPath>Объект.ДокументОснование</DataPath>
+			<Enabled>false</Enabled>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДокументОснованиеКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ДокументОснованиеРасширеннаяПодсказка" id="15"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ЗаявкаНаТранспорт</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>
